@@ -1,3 +1,10 @@
+
+*{
+  margin: 0;
+  padding: 0;
+
+}
+
 body {
 background-color: lightcyan;
 }
@@ -5,4 +12,98 @@ background-color: lightcyan;
 a {
     color: black;
     text-decoration: none;
+}
+
+html, header, footer, input, #logo, button, table {
+    border: 3px black solid;
+}
+
+header{
+    height: auto;
+    background-color: rgb(177, 174, 174);
+    padding-top: 1%;
+    padding-bottom: 3%;
+}
+
+h1{
+    text-align: center;
+}
+
+.groupeHeader {
+  display: flex;
+  justify-content: space-around;
+}
+
+.bordarrondi {
+   border-radius: 10px;
+}
+
+.groupeLogo {
+  display: flex;
+  justify-content: space-between;
+}
+
+#logo, h2, nav {
+    margin-top: 3%;
+}
+
+#logo {
+  margin-left: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+}
+
+button {
+  margin: 20px;
+  padding: 10px 30px 10px 30px;
+  box-shadow: 6px 6px 0px rgba(0, 0, 0);
+  
+}
+
+.affichage {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 15%;
+}
+
+.affichage p {
+  padding: 15px;
+}
+
+.apprenants {
+  margin-left: 20px;
+}
+
+table {
+  width: 60%;
+  margin-left: 20px;
+  
+}
+
+footer{
+    height: auto;
+    background-color: rgb(177, 174, 174);
+    padding-top: 1%;
+    padding-bottom: 3%;
+    margin-top: 50px;
+}
+
+
+
+
+
+
+/* Styles pour mobiles (par défaut) */
+.container {
+  flex-direction: column;
+}
+/* Adaptation pour les grands écrans (tablettes et ordinateurs) */
+@media screen and (min-width: 768px) {
+  .container {
+    flex-direction: row;
+  }
 }
