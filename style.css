@@ -92,10 +92,55 @@ footer{
     margin-top: 50px;
 }
 
+/*PAGE INFORMATIONS*/
+
+.centrer {
+    text-align: center;
+}
+.infos {
+    margin-bottom: 20px;
+}
+.date {
+    margin-bottom: 10px;
+}
+.nombre {
+    margin-bottom: 20px;
+}
+
+.description, .liensutiles {
+    border: 3px black solid;
+    padding: 30px 60px 30px 60px;
+}
+
+.descriptionEtLiens {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  
+}
+
+.liensutiles, #liensutiles {
+  margin-left: 30px;
+}
 
 
+/*PAGE PREFERENCES*/
 
+.format {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
 
+.espace {
+  padding: 20px;
+}
+
+.boutonpreferences {
+  display: flex;
+  justify-content: center;
+}
 
 /* Styles pour mobiles (par défaut) */
 .container {
