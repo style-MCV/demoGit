@@ -9,7 +9,7 @@
 <script src="https://kit.fontawesome.com/a46f84f941.js" crossorigin="anonymous"></script>
 </head>
 
-<body onload="initiale();switch_accueil()">
+<body onload="initiale();switch_accueil(); autre_relie()">
     <header>
         <h1>PromoENI - Accueil</h1>
         <div class="groupeHeader">
@@ -19,7 +19,7 @@
         <i class="fas fa-home"></i>
         
       
-        <input type="url" id="url" name="url" size="120" placeholder="https://promo-eni.com/" title="Saisissez votre URL">
+        <input type="url" id="url" name="url" class="url" size="120" placeholder="https://promo-eni.com/" title="Saisissez votre URL">
         
         <div class="recherche">
         <i class="fa-solid fa-magnifying-glass"></i>   
@@ -39,10 +39,10 @@
         <img src="Brief/logo.png" alt="Logo de l'ENI" width="70" height="70" id="logo">
         <h2>Promo EDWM2511FT</h2>
         <nav>
-            <button><a href="/about.html">Accueil</a></button>
-            <button><a href="/preferences.html">Préférences</a></button>
-            <button><a href="/carte.html">Carte</a></button>
-            <button><a href="/informations.html">Informations</a></button>
+            <button><a href="/index.html">Accueil</a></button>
+            <button><a href="/preferences.html" aria-label="Accéder à la page préférences">Préférences</a></button>
+            <button><a href="/map.html" aria-label="Accéder à la page carte">Carte</a></button>
+            <button><a href="/informations.html" aria-label="Accéder à la page informations">Informations</a></button>
         </nav>
         </div>
         <div class="affichage">
@@ -50,12 +50,13 @@
         <input type="radio" name="affichage" value="liste" checked> 
         <p>Liste</p>
         <input type="radio" name="affichage" value="cartes"> 
-        <a href="/index_cartes.html">Carte</a>
         <p>Cartes</p>
          </div>   
     
-        <table border="1">
+    
+        <table border="1" id="tableau">
             <h2 class="apprenants">Liste des apprenants</h2>
+            
             <thead>
                 <tr>
                 <th>Nom</th>
@@ -64,9 +65,29 @@
                 <th>Détail</th>
                 </tr>
             </thead>
-            <tbody>
-            <select>  
-                <tr>
+            <tbody id="students">
+            
+                
+            </tbody>
+            <tfoot>
+                <tr></tr>
+            </tfoot>
+        
+        </table>
+    
+    </main>
+
+<footer>
+
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
+<!--
+<tr>
                     <td>VOGT</td>
                     <td>Marie-Claire</td>
                     <td>Paris</td>
@@ -151,19 +172,4 @@
                     <td></td>
                     <td></td>
                 </tr>
-            </select>      
-            </tbody>
-            <tfoot>
-                <tr></tr>
-            </tfoot>
-        </table>
-
-    </main>
-
-<footer>
-
-</footer>
-
-<script src="script.js"></script>
-</body>
-</html>
+                 -->

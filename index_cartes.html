@@ -9,7 +9,7 @@
 <script src="https://kit.fontawesome.com/a46f84f941.js" crossorigin="anonymous"></script>
 </head>
 
-<body onload="initiale()">
+<body onload="initiale(); relie()">
     <header>
         <h1>PromoENI - Accueil</h1>
         <div class="groupeHeader">
@@ -19,7 +19,7 @@
         <i class="fas fa-home"></i>
         
       
-        <input type="url" id="url" name="url" size="120" placeholder="https://promo-eni.com/" title="Saisissez votre URL">
+        <input type="url" id="url" name="url" class="url" size="120" placeholder="https://promo-eni.com/" title="Saisissez votre URL">
         
         <div class="recherche">
         <i class="fa-solid fa-magnifying-glass"></i>   
@@ -39,9 +39,9 @@
         <img src="Brief/logo.png" alt="Logo de l'ENI" width="70" height="70" id="logo">
         <h2>Promo EDWM2511FT</h2>
         <nav>
-            <button><a href="/about.html">Accueil</a></button>
+            <button><a href="/index.html">Accueil</a></button>
             <button><a href="/preferences.html">Préférences</a></button>
-            <button><a href="/carte.html">Carte</a></button>
+            <button><a href="/map.html">Carte</a></button>
             <button><a href="/informations.html">Informations</a></button>
         </nav>
         </div>
@@ -54,44 +54,10 @@
          </div>   
 
 
-         <h2>Liste des apprenants</h2>
-         <div class="conteneur">
+         <h2 class="marge">Liste des apprenants</h2>
+         <div class="conteneur" id="cartes">
 
-            <div class="box">Élément 1</div>
-
-            <div class="box">Élément 2</div>
-
-            <div class="box">Élément 3</div>
-
-            <div class="box">Élément 4</div>
-
-            <div class="box">Élément 5</div>
-
-            <div class="box">Élément 6</div>
-
-            <div class="box">Élément 7</div>
-
-            <div class="box">Élément 8</div>
-
-            <div class="box">Élément 9</div>
-
-            <div class="box">Élément 10</div>
-
-            <div class="box">Élément 11</div>
-
-            <div class="box">Élément 12</div>
-
-            <div class="box">Élément 13</div>
-
-            <div class="box">Élément 14</div>
-
-            <div class="box">Élément 15</div>
-
-            <div class="box">Élément 16</div>
-
-            <div class="box">Élément 17</div>
-
-            <div class="box">Élément 18</div>
+            
 
         </div>
         

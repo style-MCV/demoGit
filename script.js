@@ -56,3 +56,85 @@ function switch_accueil () {
     }
   
 }
+
+//Pour mettre les données du promo.json dans les cartes d'index_cartes.html
+ function fetch_apprenants(){
+
+    fetch('promo.json')
+        .then((response) => {
+            return response.json()
+        })
+        .then((data) => {
+
+            let conteneur = document.getElementById('cartes');
+            for (student of data.apprenants) { //student=chaque élément du tableau apprenants
+ 
+                    const detailsStudent = document.createElement('div');
+                    detailsStudent.classList.add('box');
+
+                    detailsStudent.innerHTML = "<br>" + student.prenom + ' ' + student.nom + "<br>" + "<br>" + student.ville + "<br>" + "<br>" + "<br>" +"<a href='#' class='detail'>Détail</a>";
+                    conteneur.appendChild(detailsStudent);
+            }
+              });
+}
+
+function relie(){
+
+    fetch_apprenants();
+}
+
+//Pour mettre les données du promo.json dans le tableau d'index.html
+
+function fetch_apprenants_liste(){
+
+    fetch('promo.json')
+        .then((response) => {
+            return response.json()
+        })
+        .then((data) => {
+
+            let conteneur = document.getElementById('students');//students=id du tbody
+            for (student of data.apprenants) { //student=chaque élément du tableau apprenants
+ 
+                    const detailsStudent = document.createElement('tr');//1 ligne pour chaque apprenant
+
+                    detailsStudent.innerHTML = "<td>" + student.prenom +"</td> <td>" + student.nom + "</td> <td> " + student.ville + "</td> <td> <a href='#' >Détail</a></td>";//innerhtml=contenu
+                    conteneur.appendChild(detailsStudent);//j'ajoute au tableau vide tbody chaque ligne d'apprenants
+            }
+              });
+}
+
+function autre_relie(){
+
+    fetch_apprenants_liste();
+
+}
+
+
+/*ESSAI AVEC TP DU COURS JSON
+function displayData(data){
+
+    localStorage.setItem("apprenants", JSON.stringify(data));
+
+    let apprenants = JSON.parse(localStorage.getItem("apprenants"));
+    console.log(JSON.parse(apprenants));
+}
+*/
+
+//relier avec id map sur map.html
+let lat = 48.852969;
+let lon = 2.349903;
+
+let map = L.map("map", {
+    zoom : 13,
+    center: [lat, lon]
+});
+
+L.tileLayer("https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png", {
+    minZoom: 1,
+    maxZoom: 20,
+    attribution: 'données ©  <a href="//osm.org/copyright">OpenStreetMap</a>/ODbl - rendu <a href="//openstreetmap.fr">OSM France</a>'
+
+}).addTo(map);
+
+let marker = L.marker([lat,lon]).addTo(map);
