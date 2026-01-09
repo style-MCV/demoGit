@@ -7,7 +7,9 @@
 
 body {
   height: 1000px;
-  background-color: lightcyan;
+  background-color: rgb(176, 201, 247);
+  /*background: #EEAECA;
+  background: radial-gradient(circle,rgba(238, 174, 202, 1) 0%, rgb(100, 149, 237) 100%);*/
 
 }
 
@@ -69,7 +71,9 @@ button {
   margin: 20px;
   padding: 10px 30px 10px 30px;
   box-shadow: 6px 6px 0px rgba(0, 0, 0);
-  
+  border-radius: 15px;
+  background: radial-gradient(circle,rgba(238, 174, 202, 1) 0%, rgb(100, 149, 237) 100%);
+  cursor: pointer;
 }
 
 .affichage {
@@ -97,8 +101,49 @@ button {
 table {
   width: 60%;
   margin-left: 20px;
+  margin-bottom: 30px;
   
 }
+/*ESSAI 2 MODALE POP UP*/
+
+.Detail {
+  border: 3px black solid;
+  margin: 80px;
+  padding: 10px 30px 10px 30px;
+  box-shadow: 6px 6px 0px rgba(0, 0, 0);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 150px;
+  left: 180px;
+  width: 100%;
+  height: 100%;
+  /*background: rgba(0, 0, 0, 0.5);*/
+}
+
+.modal-content {
+  background: radial-gradient(circle,rgba(238, 174, 202, 1) 0%, rgb(100, 149, 237) 100%);
+  margin: 10% auto;
+  padding: 20px;
+  width: 400px;
+  position: relative;
+  border-radius: 20px;
+  border: solid 3px black;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  cursor: pointer;
+  font-size: 30px;
+}
+
+
+
+
 
 footer {
     height: auto;
@@ -261,6 +306,20 @@ nav {
 table{
   width: 90%;
 }
+
+.Detail {
+  margin: 100px;
+}
+
+.modal {
+  top: 200px;
+  left: 10px;
+}
+
+.modal-content {
+  width: 200px;
+}
+
 
 footer {
   position: initial;

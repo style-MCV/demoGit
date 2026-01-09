@@ -1,74 +1,71 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Accueil avec cartes</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" />
-<link href="style.css" rel="stylesheet">
-<script src="https://kit.fontawesome.com/a46f84f941.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil avec cartes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" />
+    <link href="style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a46f84f941.js" crossorigin="anonymous"></script>
 </head>
 
 <body onload="initiale(); relie()">
     <header>
         <h1>PromoENI - Accueil</h1>
         <div class="groupeHeader">
-        <i class="fa-solid fa-arrow-left"></i>
-        <i class="fa-solid fa-arrow-right"></i>
-        <i class="fa-solid fa-xmark"></i>
-        <i class="fas fa-home"></i>
+            <i class="fa-solid fa-arrow-left"></i>
+            <i class="fa-solid fa-arrow-right"></i>
+            <i class="fa-solid fa-xmark"></i>
+            <i class="fas fa-home"></i>
+            
         
-      
-        <input type="url" id="url" name="url" class="url" size="120" placeholder="https://promo-eni.com/" title="Saisissez votre URL">
-        
-        <div class="recherche">
-        <i class="fa-solid fa-magnifying-glass"></i>   
-        <input type="search" id="recherche" name="recherche" size="20" class="bordarrondi">
+            <input type="url" id="url" name="url" class="url" size="120" placeholder="https://promo-eni.com/" title="Saisissez votre URL">
+            
+            <div class="recherche">
+                <i class="fa-solid fa-magnifying-glass"></i>   
+                <input type="search" id="recherche" name="recherche" size="20" class="bordarrondi">
 
-        <!--2ème option pour la loupe
-        <input placeholder="🔎" type="text" class="bordarrondi"> -->
-        <!--3ème option pour la loupe
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path d="m21 21-4.34-4.34"></path><circle cx="11" cy="11" r="8"></circle></svg>
-        <path d="m21 21-4.34-4.34"></path><circle cx="11" cy="11" r="8"></circle>-->
-        </div>
+                <!--2ème option pour la loupe
+                <input placeholder="🔎" type="text" class="bordarrondi"> -->
+                <!--3ème option pour la loupe
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path d="m21 21-4.34-4.34"></path><circle cx="11" cy="11" r="8"></circle></svg>
+                <path d="m21 21-4.34-4.34"></path><circle cx="11" cy="11" r="8"></circle>-->
+            </div>
         </div>
     </header>
 
     <main>
         <div class="groupeLogo">
-        <img src="Brief/logo.png" alt="Logo de l'ENI" width="70" height="70" id="logo">
-        <h2>Promo EDWM2511FT</h2>
-        <nav>
-            <button><a href="/index.html">Accueil</a></button>
-            <button><a href="/preferences.html">Préférences</a></button>
-            <button><a href="/map.html">Carte</a></button>
-            <button><a href="/informations.html">Informations</a></button>
-        </nav>
+            <img src="Brief/logo.png" alt="Logo de l'ENI" width="70" height="70" id="logo">
+            <h2>Promo EDWM2511FT</h2>
+            <nav>
+                <button><a href="/index.html">Accueil</a></button>
+                <button><a href="/preferences.html">Préférences</a></button>
+                <button><a href="/map.html">Carte</a></button>
+                <button><a href="/informations.html">Informations</a></button>
+            </nav>
         </div>
+
         <div class="affichage">
-        <p>Type affichage</p>
-        <input type="radio" name="affichage" value="liste" checked> 
-        <p>Liste</p>
-        <input type="radio" name="affichage" value="cartes"> 
-        <p>Cartes</p>
-         </div>   
+            <p>Type affichage</p>
+                <input type="radio" name="affichage" value="liste" checked> 
+                <p>Liste</p>
+                <input type="radio" name="affichage" value="cartes"> 
+                <p>Cartes</p>
+        </div>   
 
+        <h2 class="marge">Liste des apprenants</h2>
 
-         <h2 class="marge">Liste des apprenants</h2>
-         <div class="conteneur" id="cartes">
+        <div class="conteneur" id="cartes">
 
             
 
         </div>
-        
-                
-
     </main>
 
-<footer>
+    <footer>
 
-</footer>
-
-<script src="script.js"></script>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
